@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var playerCard = "card13"
-    @State var cpuCard = "card13"
+    @State var playerCard = "back"
+    @State var cpuCard = "back"
     
     @State var playerScore = 0
     @State var cpuScore = 0
@@ -36,15 +36,21 @@ struct ContentView: View {
                     deal()
                     if(playerScore ==  20){
                         result = true
+                        resultText = "You won! 🏆"
+                        playerCard = "back"
                         playerScore = 0
                         cpuScore = 0
-                        resultText = "You won! 🏆"
+                        cpuCard = "back"
+                        
                     }
                     else if (cpuScore == 20){
                         result = true
+                        resultText = "You lost 😔"
+                        playerCard = "back"
                         playerScore = 0
                         cpuScore = 0
-                        resultText = "You lost 😔"
+                        cpuCard = "back"
+                        
                     }
                    
                     
@@ -83,10 +89,10 @@ struct ContentView: View {
     }
     
     func deal(){
-        var playerCardValue = Int.random(in: 2...14)
+        let playerCardValue = Int.random(in: 2...14)
         playerCard = "card" + String(playerCardValue)
         
-        var cpuCardValue = Int.random(in: 2...14)
+        let cpuCardValue = Int.random(in: 2...14)
         cpuCard = "card" + String(cpuCardValue)
         
         if(playerCardValue > cpuCardValue){
