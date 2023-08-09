@@ -4,7 +4,7 @@
 This simple version of War is the start of my learning journey for mobile app development on IOS devices. This is part of the Learn iOS in 30 Days course from [CodeWithChris](https://codewithchris.com/) 
 but with some modifications by me.
 The objective of the game is to be the first person to reach 20 points while playing against the cpu. The cards that are included from lowest value to highest value are as follows :
- 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, jack, queen, king. To earn points you will need to have a card that is of higher value than the cpu. If there is a tie, no points will be awarded. Once either you or the cpu
+ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, jack, Queen, King, Ace. To earn points you will need to have a card that is of higher value than the cpu. If there is a tie, no points will be awarded. Once either you or the cpu
  reach 20 points, an alert will pop up indicating who won and both scores will be reset.
 
 ## Screenshots
